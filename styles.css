@@ -1,0 +1,418 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+body { 
+  font-family: AcromRegular;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 900px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 900px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 900px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.col-lg-4 {
+  z-index: 0;
+  padding: 0;
+}
+
+.col-lg-5 {
+  padding: 0 ;
+  line-height: 1;
+  font-family: AcromMedium;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 320px) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 170px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .my-left {
+    float: left;
+    margin: 434px 0 0;
+  }
+  .my-right {
+    float: right;
+    margin: 434px 0 0;
+  }
+  .my-res {
+    max-width: 100%;
+  }
+  .navbar-brand {
+    margin-top: 31px;
+    padding: 0 0 0 15px !important;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  .navbar-toggle {
+    margin-top: 35.5px;
+    margin-right: 45%;
+  }
+  #header {
+    height: 555px;
+    background-image: url(images/header.png);
+    padding-top: 27.5%;
+    text-align: center;
+    color: #204d74 !important;
+  }
+  .b-popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  .b-popup .b-popup-content {
+    margin: 1% auto 0;
+    width: 98%;
+    height: 475px;
+    background-color: #f2f6f9;
+    border: 2px dotted #59595a;
+    border-radius: 16px;
+    color: #245360;
+  }
+  .c-popup {
+    display: none;
+  }
+  .d-popup > ul {
+    display: none; 
+  }
+  .dash {
+    display: none;
+  }
+  .e-popup {
+    padding: 0 0 0 36px;
+  }
+  .my-button3 {
+    width: 292px;
+    height: 58px;
+    background: #fe6d2c !important;
+    color: #fff !important;
+    margin: 0 0 0 -27px;
+  }
+  .my-button3:hover {
+    background: #20c6f6 !important;
+    color: #fff;
+  }
+  .my-input {
+    padding: 0;
+  }
+  #content_1 {
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: -111px;
+  }
+  #content_1 h3, #content_2 h4 {
+    font-family: AcromBold;
+    color: #2f606e;
+  }
+  #content_1 p {
+    color: #9c9c9c;
+  }
+  #content_2 p {
+    color: #4f4f4f;
+  }
+  .row {
+    margin: 0;
+    width: 100%;
+  }
+  .line {
+    border-right: none;
+  }
+  .line2 {
+    border-left: none;
+  }
+  #content_2 {
+    height: 100%;
+    background-color: #f2f6f9;
+    text-align: center;
+    padding-top: 132px;
+  }
+}
+
+@media (min-width: 640px) {
+  .navbar-toggle {
+    margin-right: 47%;
+  }
+  #header {
+    height: 355px;
+    padding-top: 83px;
+  }
+  .half-header {
+    width: 55%;
+    display: inline;
+    float: left;
+  }
+  .half-header2 {
+    width: 45%;
+    display: inline;
+    float: right;
+    padding-top: 45px;
+  }
+  .b-popup .b-popup-content {
+    height: 520px;
+    padding: 10px;
+  }
+  .d-popup > ul {
+    display: inherit;
+  }
+  .my-button3 {
+    margin: 5px 0 0;
+  }
+  #content_1 {
+    padding: 0 19.5%;
+  }
+}
+
+@media (min-width: 980px) {
+  .carousel-caption p {
+    margin-bottom: 210px;
+  }
+  .my-left {
+    margin: 434px 0 0 51px;
+  }
+  .my-right {
+    margin: 434px 51px 0 0;
+  }
+  #header {
+    padding-top: 145px;
+  }
+  .half-header2 {
+    padding-top: 15px;
+  }
+  .b-popup .b-popup-content {
+    margin: 75px auto 0;
+    width: 927px;
+    height: 786px;
+    padding: 0;
+  }
+  .c-popup{
+    width: 458px;
+    max-height: 555px;
+    float: left;
+    padding: 74px 0 0 43px;
+    display: inherit;
+  }
+  .d-popup {
+    width: 465px;
+    max-height: 555px;
+    float: right;
+    padding: 54px 71px 0 0;
+  }
+  .dash {
+    display: inherit;
+  }
+  .e-popup {
+    width: 927px;
+    display: inline-block;
+    padding: 37px 0 0 96px;
+  }
+  .my-button3 {
+    margin: 43px 0 0 223px;
+  }
+  .my-input {
+    padding: 0 15px 0 67px;
+  }
+  .content_2 {
+    padding: 0 13%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5  {
+    line-height: 2.5;
+  }
+  .line {
+    border-right: 2px dotted #dde1e3;
+  }
+  .line2 {
+    border-left: 2px dotted #dde1e3;
+  }
+  #content_2 {
+    padding: 132px 22% 0;
+  }
+}
+
+/* MY CSS
+-------------------------------------------------- */
+
+.my-button:link {
+  width: 313px;
+  height: 98px;
+  padding: 36px;
+  background: url(images/button.png);
+  border-color: transparent;
+  margin: 0 -19.5%;
+}
+
+.my-button:hover {
+  border-color: #204d74;
+}
+
+.my-button2:link {
+  width: 294px;
+  height: 76px;
+  padding: 11px;
+  background: url(images/button2.png);
+  border-color: transparent;
+  margin: 0 -19.5%;
+}
+
+.my-button2:hover {
+  border-color: #204d74;
+}
+
+.my-anchor { 
+  position: absolute; 
+  bottom: -20px;
+  margin-left: -12px; 
+}
+
+#navbar {
+  border: none;
+}
+
+.navbar-fixed-top {
+  top: 900px;
+}
+
+.navbar-nav {
+  margin: 30px 0 0 0;
+}
+
+.navbar-nav > li > a {
+  color: #204d74 !important;
+}
+
+.navbar-nav > li > a:hover {
+  color: #33ccff !important;
+  cursor: pointer;
+}
+
+.my-basket {
+  float: right;
+  margin-top: -63.5px;
+  padding-bottom: 17.5px;  
+}
+
+#menu.default {
+  position: absolute;
+  top:900px;
+  z-index: 1;
+}
+
+#menu.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.form-control {
+  width: 243px !important;
+  background-color: transparent !important;
+  border: 1px dotted #59595a !important;
+  border-radius: 0 !important;
+}
+
+.circle4 {
+  width: 100%;
+  max-width: 904px;
+  padding-top: 20px;
+}
+
+.circle5 {
+  width: 100%;
+  max-width: 665px;
+  padding-top: 20px;
+}
+
+.hyper:link {
+  color: #fe6d2c;
+  text-decoration: underline;
+}
+
+.hyper:hover {
+  color: #20c6f6;
+}
+
+#footer {
+  height: 100%;
+  min-height: 426px;
+  background: url(images/footer.png);
+  text-align: center;
+  color: #fe6d2c;
+}
+
+@font-face {
+    font-family: AcromThin; /* Гарнитура шрифта */
+    src: url(fonts/AcromThin.otf); /* Путь к файлу со шрифтом */
+  }
+  .thin {
+    font-family: AcromThin;
+}
+@font-face {
+    font-family: AcromLight;
+    src: url(fonts/AcromLight.otf);
+  }
+  .light {
+    font-family: AcromLight;
+}
+@font-face {
+    font-family: AcromRegular;
+    src: url(fonts/AcromRegular.otf);
+  }
+  .regular {
+    font-family: AcromRegular;
+}
+@font-face {
+    font-family: AcromMedium;
+    src: url(fonts/AcromMedium.otf);
+  }
+  .medium {
+    font-family: AcromMedium;
+}
+@font-face {
+    font-family: AcromBold;
+    src: url(fonts/AcromBold.otf);
+  }
+  .bold {
+    font-family: AcromBold;
+}
+@font-face {
+    font-family: AcromExtraBold;
+    src: url(fonts/AcromExtraBold.otf);
+  }
+  .extraBold {
+    font-family: AcromExtraBold;
+}
