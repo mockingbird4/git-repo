@@ -77,9 +77,9 @@ body {
     margin-right: 45%;
   }
   #header {
-    height: 555px;
+    height: 600px;
     background-image: url(images/header.png);
-    padding-top: 27.5%;
+    padding-top: 35%;
     text-align: center;
     color: #204d74 !important;
   }
@@ -166,8 +166,8 @@ body {
     margin-right: 47%;
   }
   #header {
-    height: 355px;
-    padding-top: 83px;
+    height: 400px;
+    padding-top: 105px;
   }
   .half-header {
     width: 55%;
@@ -206,7 +206,7 @@ body {
     margin: 434px 51px 0 0;
   }
   #header {
-    padding-top: 145px;
+    padding-top: 120px;
   }
   .half-header2 {
     padding-top: 15px;
@@ -250,6 +250,10 @@ body {
 }
 
 @media (min-width: 1200px) {
+  #header {
+  	height: 355px;
+    padding-top: 145px;
+  }
   .col-lg-5  {
     line-height: 2.5;
   }
